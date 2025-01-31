@@ -18,6 +18,60 @@
 <script async type="application/javascript" src="https://a.adnflow.com/ad-provider.js"></script> 
  <ins class="easa8d6n9f720" data-zoneid="794"></ins> 
  <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
+
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id="video-id"><source src="file_example.mp4" type="video/mp4" />
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoPlay": false,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": false,
+		"playbackRateEnabled": false,
+		"allowDownload": false,
+		"playButtonShowing": false,
+		"fillToContainer": false,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [
+                        {
+                            "roll": "preRoll",
+                            "vastTag": "https://s.adnflow.com/v1/vast.php?idzone=796"
+                        },
+                        {
+                            "roll": "midRoll",
+                            "vastTag": "https://s.adnflow.com/v1/vast.php?idzone=796",
+                            "timer": 8
+                        },
+                        {
+                            "roll": "midRoll",
+                            "vastTag": "https://s.adnflow.com/v1/vast.php?idzone=796",
+                            "timer": 10
+                        },
+                        {
+                            "roll": "postRoll",
+                            "vastTag": "https://s.adnflow.com/v1/vast.php?idzone=796"
+                        }
+                ],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>
+  
 </body>
 
 </html>
